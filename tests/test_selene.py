@@ -5,6 +5,7 @@ def test_github():
     browser.config.window_width = 1920 # ширина браузера
     browser.open('https://github.com/')
 
+
     browser.element('[class="search-input"]').click()
     browser.element('[id="query-builder-test"]').type('eroshenkoam/allure-example').press_enter()
     browser.element(by.link_text('eroshenkoam/allure-example')).click()
