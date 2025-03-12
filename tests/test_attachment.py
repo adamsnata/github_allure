@@ -9,4 +9,5 @@ def test_attachment():
     allure.attach('<h1>Hello, world</h1>', name='html', attachment_type=attachment_type.HTML) #создаем файл
     allure.attach(json.dumps({"first":1, "second":2}), name="Json", attachment_type=attachment_type.JSON) #создаем файл
 
+
     #получается, что данные файлы можно прикреплять к тестам, как описание 
