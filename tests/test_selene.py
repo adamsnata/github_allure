@@ -11,5 +11,4 @@ def test_github():
     browser.element(by.link_text('eroshenkoam/allure-example')).click()
     browser.element('#actions-tab').click()
     browser.element(by.partial_text('#278')).should(be.visible)
-
     browser.quit()
